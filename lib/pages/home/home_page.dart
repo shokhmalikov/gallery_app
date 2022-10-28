@@ -16,6 +16,8 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +48,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 width: 400,
-                height: 627,
+                height: 624,
                 child: ListView(
                   scrollDirection: Axis.vertical,
                   children: [
@@ -410,35 +412,36 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
+        items:  const<BottomNavigationBarItem>[
+           BottomNavigationBarItem(
             icon: Text(
               'Pictures',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             label: '',
           ),
-          BottomNavigationBarItem(
+           BottomNavigationBarItem(
             icon: Text(
               'Albums',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             label: '',
           ),
-          BottomNavigationBarItem(
+           BottomNavigationBarItem(
             icon: Text(
               'Stories',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             label: '',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.dehaze,
-              color: Colors.black,
-            ),
-            label: '',
-          ),
+          // BottomNavigationBarItem(
+          //   icon: IconButton(
+          //     onPressed:(),
+          //     icon: const Icon(Icons.dehaze),
+          //     color: Colors.black,
+          //   ),
+          //   label: '',
+          // ),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
