@@ -11,15 +11,15 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
- Size? _size;
+  Size? _size;
   @override
   void didChangeDependencies() {
     _size = MediaQuery.of(context).size;
 
     ///timer
     Timer(const Duration(seconds: 3), () {
-     Navigator.of(context)
-         .pushNamedAndRemoveUntil(HomePage.path, (route) => false);
+      Navigator.of(context)
+          .pushNamedAndRemoveUntil(HomePage.path, (route) => false);
     });
     super.didChangeDependencies();
   }
@@ -27,9 +27,10 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+      backgroundColor: Colors.white,
       body: Center(
-        child: Image.asset('assets/samsung_logo.png', width: _size!.width * 0.2),
+        child:
+            Image.asset('assets/samsung_logo.png', width: _size!.width * 0.2),
       ),
     );
   }

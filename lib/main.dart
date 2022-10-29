@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gallery_app/pages/Album/album_page.dart';
+import 'package:gallery_app/pages/Photo/photos_page.dart';
 import 'package:gallery_app/pages/home/home_page.dart';
 import 'package:gallery_app/pages/splash/splash.dart';
 
@@ -19,7 +21,10 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         HomePage.path:(context) => const HomePage(),
-        SplashPage.path:(context) => const SplashPage(),
+        PhotosPage.path: (context) => const PhotosPage(),
+        SplashPage.path: (context) => const SplashPage(),
+        NimadirPage.path:(context) => const NimadirPage(),
+       // AlbumsPage.path: (context) => const AlbumsPage(),
       },
       initialRoute: SplashPage.path,
     );

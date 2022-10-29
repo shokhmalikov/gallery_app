@@ -14,6 +14,10 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   splash: ^1.1.0
+  video_player: ^2.4.7
+  transparent_image: ^2.0.0
+  photo_gallery: ^1.1.1
+  permission_handler: ^10.2.0
 
 dev_dependencies:
   flutter_test:
